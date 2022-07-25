@@ -76,7 +76,11 @@
         .main{
             display: flex;
         }
-
+	.img{
+		height:600px;
+		width:800px; 
+		margin-left:40px;
+	}
         @media screen and (max-width: 959px) {
 	        body{
             background-color: beige;
@@ -150,6 +154,10 @@
         .main{
             display: flex;
         }
+	.img{
+		height:0px; 
+		width:0px; 
+		margin-left:0px;
         }
         @media screen and (max-width: 480px) {
 	    /* 480px以下に適用されるCSS（スマホ用） */
@@ -225,11 +233,15 @@
         .main{
             display: flex;
         }
+	.img{
+		height:0px; 
+		width:0px; 
+		margin-left:0px;
         }
     </style>
     <script>
         //画像の時間で変更
-        const img = ["photo/23733393_m.jpg", "photo/23929276_s.jpg", "photo/24157609_m.jpg"];
+        const img = ["23733393_m.jpg", "23929276_s.jpg", "24157609_m.jpg"];
       
         let count = -1;
       
@@ -317,7 +329,7 @@
 
                 <div id="sample" class="flex flex-col justify-center">
                 
-                  <img id="pic" class="object-contain w-full" src="hoge.jpg" style="height:600px; width:800px; margin-left:40px">
+                  <img id="pic" class="object-contain w-full" src="hoge.jpg" >
                 
                 </div>
             
