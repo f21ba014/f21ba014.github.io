@@ -78,15 +78,158 @@
         }
 
         @media screen and (max-width: 959px) {
-	        
+	        body{
+            background-color: beige;
+        }
+        #title{
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px red;
+            font-size: 80px;
+        }
+        #text{
+            color  : red;
+            text-align: center;
+        }
+        .menu {
+            overflow: hidden;
+            max-width: 600px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        label {
+            display: block;
+            margin: 0 0 4px 0;
+            padding : 15px;
+            line-height: 1;
+            color :#fff;
+            background : orange;
+            cursor :pointer;
+        }
+
+        input {
+            display: none;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            background :#f4f4f4;
+            list-style: none;
+        }
+
+        .menu li {
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        #menu_bar01:checked ~ #links01 li,
+        #menu_bar02:checked ~ #links02 li,
+        #menu_bar03:checked ~ #links03 li,
+        #menu_bar04:checked ~ #links04 li,
+        #menu_bar05:checked ~ #links05 li {
+            height: 54px;
+            opacity: 1;
+        }
+
+        #sample{
+            float: right;
+        }
+
+        .main{
+            display: flex;
+        }
         }
         @media screen and (max-width: 480px) {
 	    /* 480px以下に適用されるCSS（スマホ用） */
+        body{
+            background-color: beige;
+        }
+        #title{
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px red;
+            font-size: 80px;
+        }
+        #text{
+            color  : red;
+            text-align: center;
+        }
+        .menu {
+            overflow: hidden;
+            max-width: 600px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        label {
+            display: block;
+            margin: 0 0 4px 0;
+            padding : 15px;
+            line-height: 1;
+            color :#fff;
+            background : orange;
+            cursor :pointer;
+        }
+
+        input {
+            display: none;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            background :#f4f4f4;
+            list-style: none;
+        }
+
+        .menu li {
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        #menu_bar01:checked ~ #links01 li,
+        #menu_bar02:checked ~ #links02 li,
+        #menu_bar03:checked ~ #links03 li,
+        #menu_bar04:checked ~ #links04 li,
+        #menu_bar05:checked ~ #links05 li {
+            height: 54px;
+            opacity: 1;
+        }
+
+        #sample{
+            float: right;
+        }
+
+        .main{
+            display: flex;
+        }
         }
     </style>
     <script>
         //画像の時間で変更
-        const img = ["23733393_m.jpg", "23929276_s.jpg", "24157609_m.jpg"];
+        const img = ["photo/23733393_m.jpg", "photo/23929276_s.jpg", "photo/24157609_m.jpg"];
       
         let count = -1;
       
@@ -116,7 +259,7 @@
     <title>余り物で作る</title>
 </head>
 <body>
-    <h1 id="title">余り物で作る飯</h1>
+    <h1 id="title">余り物で作る</h1>
     <br><br>
     <h2 id="text">日々の生活の中、少し材料が余ってしまった。けど使い道が思いつかないそんな経験あると思います。
         <br>そんなとき、材料から作れるものを見つけられたら便利だと思いませんか？</h2>
