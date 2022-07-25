@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        body{
+            background-color: beige;
+        }
+        #title{
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px red;
+            font-size: 80px;
+        }
+        .box1{
+            padding: 8px 19px;
+            margin: 2em 0;
+            color: #2c2c2f;
+            background: #cde4ff;
+            border-top: solid 5px #5989cf;
+            border-bottom: solid 5px #5989cf;
+        }
+        .box1 p {
+            margin: 0; 
+            padding: 0;
+        }
+
+        .box2{
+            padding: 8px 19px;
+            margin: 2em 0;
+            color: #2c2c2f;
+            background: #cde4ff;
+            border-top: solid 5px #5989cf;
+            border-bottom: solid 5px #5989cf;
+        }
+        .box2 p {
+            margin: 0; 
+            padding: 0;
+        }
+
+        
+
+        .main{
+            display: flex;
+        }
+
+        @media screen and (max-width: 959px) {
+	    /* 959px以下に適用されるCSS（タブレット用） */
+        }
+        @media screen and (max-width: 480px) {
+	    /* 480px以下に適用されるCSS（スマホ用） */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>レシピを見て作ろう</title>
+</head>
+<body>
+    <h1 id="title">料理名</h1>
+    <div class="main">
+
+        
+
+        <div class="box1" style="height:19px; width : 650px">
+            <p>材料</p>
+            <br>
+            <ui>材料の記載場所</ui>
+        </div>
+    
+        <div class="img">
+        <img src="photo/23733393_m.jpg" style="height:600; width:800px; margin-top:31px">
+        <br>
+        <ui>※写真はイメージですらないです</ui>
+        </div>
+        
+    </div>
+    <div class="box2">
+        <p>作り方</p>
+    </div>
+    <ui>レシピの記載場所</ui>
+    <div style="text-align: right">
+        <br><br>
+        <A href="list.html" >レシピ一覧から選びなおす</A>
+    </div>
+    <div style="text-align: right">
+        <br>
+        <A href="recipe.html" >材料から選びなおす</A>
+        </div>
+</body>
+</html>
